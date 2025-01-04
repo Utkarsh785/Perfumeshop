@@ -15,10 +15,10 @@ const productSchema = new mongoose.Schema({
     required: true,
     min: 0
   },
-  image: {
+  image: [{
     type: String,
     required: true
-  },
+  }],
   category: {
     type: String,
     required: true,
